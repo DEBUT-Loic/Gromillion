@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "../../parametres/START_BDD.php";
+include "START_BDD.php";
 
 $point=$_POST["point"];
 
