@@ -1,5 +1,5 @@
 <?php
-include "../../parametres/START_BDD.php";
+include "START_BDD.php";
 session_start();
 
 function uniq_rand($min,$max,$tab) {
