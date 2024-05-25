@@ -1,14 +1,12 @@
 <?php
-include "START_BDD.php";
+include "../../parametres/START_BDD.php";
 session_start();
 
 function uniq_rand($min,$max,$tab) {
     do $rand=rand($min,$max); while(in_array($rand,$tab));
     return $rand;
 }
-
-// print_r($_SESSION["panelQuestions"]);
-
+// echo $_SESSION["ttlQuestions"];
 // unset($_SESSION["ttlQuestions"]);
 // unset($_SESSION["panelQuestions"]);
 if(!isset($_SESSION["ttlQuestions"])) {

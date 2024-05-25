@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "START_BDD.php";
+include "../../parametres/START_BDD.php";
 
 $point=$_POST["point"];
 
@@ -35,7 +35,11 @@ foreach ($donnees as $tableau) { ?>
 	<li class="affichageScore">
 		<div class="itemLeft">
 			<p class="rang"><?php echo $i; ?><span>e</span></p>
+			<?php if(strlen($tableau["pseudo"])>=26) { ?>
+			<p class="pseudo"><?php echo substr($tableau["pseudo"], 0, 26)."..."; ?></p>
+			<?php } else { ?>
 			<p class="pseudo"><?php echo $tableau["pseudo"]; ?></p>
+			<?php } ?>
 		</div>
 		<p class="points"><?php echo number_format($tableau["points"],0,","," "); ?></p>
 	</li>

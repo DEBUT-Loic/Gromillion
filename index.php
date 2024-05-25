@@ -19,7 +19,7 @@
 	<meta property="og:image" content="https://groludik.debut-loic.fr/img/icon.svg">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="script/milliers.js"></script>
-	<script src="script/qvgdm.js"></script>
+	<script src="script/qvgdm.min.js"></script>
 	<title> Gromillion - Groludik </title>
 </head>
 <body>
